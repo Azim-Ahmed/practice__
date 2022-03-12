@@ -1,0 +1,20 @@
+.one {
+  background: cyan;
+  min-height: 400px;
+  min-width: 400px;
+}
+.two {
+  background: blue;
+  min-height: 400px;
+  min-width: 400px;
+}
+.three {
+  background: gray;
+  min-height: 400px;
+  min-width: 400px;
+}
+.four {
+  background: rgb(184, 52, 52);
+  min-height: 400px;
+  min-width: 400px;
+}

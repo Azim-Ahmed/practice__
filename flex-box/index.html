@@ -4,15 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home____FlexBox</title>
+    <title>Home___FlexBox</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .container__one {
+        display: flex;
+      }
+      .container__two {
+        display: flex;
+      }
+    </style>
   </head>
+
   <body>
     <section>
       <div class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
+        <div class="container__one">
+          <div class="one item">1</div>
+          <div class="two item">2</div>
+          <div class="three item">3</div>
+        </div>
+        <div class="container__two">
+          <div class="four item">4</div>
+        </div>
       </div>
     </section>
   </body>
