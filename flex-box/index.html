@@ -10,12 +10,35 @@
       .container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
       }
       .container__one {
+        flex-direction: column;
         display: flex;
+        flex-basis: 100%;
       }
       .container__two {
         display: flex;
+        flex-basis: 100%;
+      }
+      .item {
+        flex-grow: 1;
+      }
+      @media only screen and (min-width: 780px) {
+        .container__one {
+          flex-direction: row;
+          flex-basis: 60%;
+          flex-wrap: wrap;
+        }
+        .container__two {
+          flex-basis: 40%;
+        }
+        .one {
+          flex-basis: 50%;
+        }
+        .two {
+          flex-basis: 50%;
+        }
       }
     </style>
   </head>
