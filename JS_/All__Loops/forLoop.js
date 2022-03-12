@@ -1,0 +1,1 @@
+const firstArray = ["azim", "bro"]
