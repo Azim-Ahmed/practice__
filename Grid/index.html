@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid __ Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+      }
+      @media only screen and (min-width: 780px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: 1fr 1fr;
+
+          grid-template-areas:
+            "one two three"
+            "four four three";
+        }
+        .one {
+          grid-area: one;
+        }
+        .two {
+          grid-area: two;
+        }
+        .three {
+          grid-area: three;
+        }
+        .four {
+          grid-area: four;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="wrap">
+      <div class="container">
+        <div class="item one">A</div>
+        <div class="item two">B</div>
+        <div class="item three">C</div>
+        <div class="item four">D</div>
+      </div>
+    </section>
+  </body>
+</html>
