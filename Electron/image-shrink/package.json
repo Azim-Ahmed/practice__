@@ -6,9 +6,11 @@
   "author": "Azim Ahmed",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
   },
   "devDependencies": {
-    "electron": "^17.1.2"
+    "electron": "^17.1.2",
+    "nodemon": "^2.0.15"
   }
 }
