@@ -1,0 +1,14 @@
+{
+  "name": "Image-shrink",
+  "version": "1.00",
+  "description": "A desktop application for image shrinking",
+  "main": "index.js",
+  "author": "Azim Ahmed",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^17.1.2"
+  }
+}
