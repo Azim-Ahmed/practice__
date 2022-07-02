@@ -1,0 +1,162 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem;
+
+    .side {
+        background-color: #fff;
+        height: 52rem;
+        width: 100%;
+        transition: all 0.8s ease-in-out;
+        color: #fff;
+        font-size: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        border-radius: 0.3rem;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    }
+    .front {
+        .picture {
+            background-size: cover;
+            height: 23rem;
+            background-blend-mode: soft-light;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .picture-1 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-secondary-light,
+                    $color-secondary-dark
+                ),
+                url(../img/nat-5.jpg);
+        }
+        .picture-2 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark
+                ),
+                url(../img/nat-6.jpg);
+        }
+        .picture-3 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-tertiary-light,
+                    $color-tertiary-dark
+                ),
+                url(../img/nat-7.jpg);
+        }
+        .heading {
+            position: absolute;
+            font-weight: 300;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            text-align: right;
+            top: 12rem;
+            right: 2rem;
+            color: $color-white;
+            width: 70%;
+
+            .heading-span {
+                padding: 1rem 2.5rem;
+                box-decoration-break: clone;
+            }
+            .span-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-secondary-light, 0.85),
+                    rgba($color-secondary-dark, 0.85)
+                );
+            }
+            .span-2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-primary-light, 0.85),
+                    rgba($color-primary-dark, 0.85)
+                );
+            }
+            .span-3 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-tertiary-light, 0.85),
+                    rgba($color-tertiary-dark, 0.85)
+                );
+            }
+        }
+        .details {
+            padding: 3rem;
+            ul {
+                list-style: none;
+                width: 80%;
+                margin: 0 auto;
+
+                li {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                    color: #000;
+                    &:not(:last-child) {
+                        border-bottom: 1px solid $color-gray-light-2;
+                    }
+                }
+            }
+        }
+    }
+    .back {
+        transform: rotateY(180deg);
+        .cta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .price-box {
+                text-align: center;
+                color: $color-white;
+                margin-bottom: 8rem;
+                .price-only {
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                }
+                .price-value {
+                    font-size: 6rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+    .back-1 {
+        background: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+        );
+    }
+    .back-2 {
+        background: linear-gradient(
+            to right bottom,
+            $color-primary-light,
+            $color-primary-dark
+        );
+    }
+    .back-3 {
+        background: linear-gradient(
+            to right bottom,
+            $color-tertiary-light,
+            $color-tertiary-dark
+        );
+    }
+
+    &:hover {
+        .front {
+            transform: rotateY(-180deg);
+        }
+        .back {
+            transform: rotateY(0);
+        }
+    }
+}

@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* Global Style */
+html {
+  font-size: 62.5%; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  50% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  50% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box; }
+
+.heading--primary {
+  text-transform: uppercase;
+  color: #fff;
+  backface-visibility: hidden;
+  margin-bottom: 5.5rem; }
+  .heading--primary .heading--primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-in-out; }
+  .heading--primary .heading--primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-in-out; }
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem; }
+  .btn:link::after,
+  .btn:visited::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: all .4s;
+    z-index: -1; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-0.1rem); }
+
+.btn--white {
+  color: #777;
+  background-color: #fff;
+  animation: moveInBottom .5s ease-in-out .3s backwards; }
+  .btn--white:hover::after {
+    transform: scale(1.5, 1.6);
+    opacity: 0; }
+  .btn--white::after {
+    background-color: #fff;
+    border-radius: 10rem; }
+
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
+  .header .logo__box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+    .header .logo__box .logo {
+      height: 3.5rem; }
+  .header .text__box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
