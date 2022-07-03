@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: black;
+}
+
+.nice-dates-popover {
+  max-width: 350px !important;
+  padding: 3px;
+}
+
+.checklistinput {
+  outline: none !important;
+  border: none !important;
+  border-color: transparent !important;
+}
+
+.dark {
+  --color-bg-primary: #2d3748;
+  --color-bg-secondary: #7C3AED;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-accent: #81e6d9;
+}
+
+.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-accent: #2b6cb0;
+}
+/* .menu {
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 5px 0 5px 0;
+  width: 150px;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  list-style: none;
+  box-shadow: 0 0 20px 0 #ccc;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+} */
