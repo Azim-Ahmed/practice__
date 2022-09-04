@@ -1,3 +1,5 @@
+import { Player } from './classes/Player.js';
+
 function multiplyNumber(a:number, b:number) {
     return a * b;
 }
@@ -97,19 +99,7 @@ calculation = (a: number, b: number,c:string) => {
 }
 calculation(4, 3, "add")
 // lecture -09
-class Player {
-    name: string;
-    age: number;
-    country: string;
-    constructor(n: string, a: number, c: string) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-}
-    play() {
-    console.log(`I am the only ${this.name} and ${this.age} ${this.country}`)
-}
-}
+
 const Mashrafi = new Player("Man", 23, "New Zealand");
 const Brocode = new Player("Brocode", 23, "New Zealand");
 const players: Player[] = [];
