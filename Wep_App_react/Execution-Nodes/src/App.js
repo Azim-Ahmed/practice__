@@ -4,12 +4,14 @@ import {
 import { FlowCanvas } from './Pages';
 import { ThemeProvider } from '@mui/system';
 import theme from './assets/Theme';
+import Counter from './Pages/NewState';
 
 function App() {
   return (
     <ReactFlowProvider>
       <ThemeProvider theme={theme}>
-        <FlowCanvas />
+        {/* <FlowCanvas /> */}
+        <Counter />
       </ThemeProvider>
 
     </ReactFlowProvider>
