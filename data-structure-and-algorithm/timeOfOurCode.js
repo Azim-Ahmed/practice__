@@ -13,7 +13,9 @@ function sumAll(n) {
     return total
 }
 
-function sumAllTwo(n) {
+function sumAllTwo(n) {   //the time complexity is Big-O(1), this is better
+
+    // there are three operator in the function 1. multiplication , 2. adding 3. Divide
     return n * (n + 1) / 2
 }
 //execute this on window environment
