@@ -24,7 +24,7 @@ function sumAllTwo(n) {   //the time complexity is Big-O(1), this is better
 }
 //execute this on window environment
 // const time1 = performance.now();
-console.log(sumAllTwo(10))
+//* console.log(sumAllTwo(10))
 // const time2 = performance.now();
 // console.log(`time difference ${(time2 - time1)}`)
 
@@ -40,8 +40,25 @@ function multipleArray(n) {
         // }
     }
 }
-multipleArray(3)
+//* multipleArray(3);
 
 //in the time complexity constant of n is not matters like (n+10) where bigO(n)
 //in the time complexity constant of n is not matters like (100n+10) where bigO(n)
 //in the time complexity constant of n is not matters like (n2 + 100n+10) where bigO(n2)
+
+
+function min5Log(n) {
+    for (let i = 0; i <= Math.max(5, n); i++) {
+        console.log(i)
+    }
+} //this is depend on O(n) because this is depending on n
+// min5Log(20)
+
+// where max
+
+function max5Log(n) {
+    for (let i = 0; i <= Math.min(5, n); i++) {
+        console.log(i)
+    }
+} //this is depend on O(1) because this is depending on number
+// max5Log(100)
