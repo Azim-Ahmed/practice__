@@ -7,9 +7,17 @@
 //1
 function sumAll(n) {
     let total = 0;
-    for (let index = 0; index < n.length; index++) {
-        total += i;
+    for (let index = 0; index <= n; index++) {
+        total += index;
     }
     return total
 }
-console.log(sumAll(10))
+
+function sumAllTwo(n) {
+    return n * (n + 1) / 2
+}
+//execute this on window environment
+const time1 = performance.now();
+console.log(sumAllTwo(10))
+const time2 = performance.now();
+console.log(`time difference ${(time2 - time1)}`)
