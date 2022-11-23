@@ -41,3 +41,7 @@ function multipleArray(n) {
     }
 }
 multipleArray(3)
+
+//in the time complexity constant of n is not matters like (n+10) where bigO(n)
+//in the time complexity constant of n is not matters like (100n+10) where bigO(n)
+//in the time complexity constant of n is not matters like (n2 + 100n+10) where bigO(n2)
