@@ -6,6 +6,10 @@
 
 //1
 function sumAll(n) {
+    //there are 5 assignments in this function
+    // let total = 0; first one where our time complexity is (5n + 2) where BigO(n)
+
+
     let total = 0;
     for (let index = 0; index <= n; index++) {
         total += index;
@@ -19,7 +23,21 @@ function sumAllTwo(n) {   //the time complexity is Big-O(1), this is better
     return n * (n + 1) / 2
 }
 //execute this on window environment
-const time1 = performance.now();
+// const time1 = performance.now();
 console.log(sumAllTwo(10))
-const time2 = performance.now();
-console.log(`time difference ${(time2 - time1)}`)
+// const time2 = performance.now();
+// console.log(`time difference ${(time2 - time1)}`)
+
+
+function multipleArray(n) {
+    for (let i = 0; i <= n; i++) {   // this is depending on n time so this one n complexity
+        //n * n = n2 complexity
+        for (let j = 0; j <= n; j++) {   // this is depending on n time so this one n complexity
+            console.log(i, j)
+        }
+        // for (let j = 0; j <= 3; j++) {   // if the next for loop depending only the number this will be n complexity
+        //     console.log(i, j)
+        // }
+    }
+}
+multipleArray(3)
