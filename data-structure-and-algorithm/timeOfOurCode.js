@@ -62,3 +62,5 @@ function max5Log(n) {
     }
 } //this is depend on O(1) because this is depending on number
 // max5Log(100)
+
+//#4
